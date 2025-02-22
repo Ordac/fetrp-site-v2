@@ -6,6 +6,14 @@ body {
     margin: 20px;
 }
 
+.page-background {
+    position: fixed;
+    z-index: -1;
+
+    content: url("images/wallhaven-gp6p5l.png");
+    opacity: 0.1;
+}
+
 h1 {
     font-weight: 800;
     color: rgb(247, 247, 248);
@@ -30,8 +38,9 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 
-    background-color: rgb(39, 41, 48);
+    background-color: rgb(39, 41, 48, 0.5);
     box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
 
     border-radius: 20px;
 
@@ -109,8 +118,9 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 
-    background-color: rgb(12, 12, 14);
+    background-color: rgb(12, 12, 14, 0.8);
     box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
 
     border-radius: 20px;
 
@@ -129,7 +139,7 @@ h3 {
 }
 
 #game-stats {
-    background-color: rgb(12, 12, 14, 0.5);
+    background-color: rgb(12, 12, 14, 0.3);
 
     display: flex;
 }
@@ -145,9 +155,15 @@ h3 {
 
 #game-socials {
     background-color: rgb(12, 12, 14, 0.5);
+    backdrop-filter: blur(8px);
 
     padding: 20px;
     display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(213, 215, 221);
 }
 
 .game-social-card {
@@ -159,11 +175,13 @@ h3 {
 
     scale: 1;
 
-    background-color: rgb(39, 41, 48);
+    background-color: rgb(39, 41, 48, 0.5);
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
 
     border-radius: 24px;
 
-    transition: scale 0.5s, color 0.5s;
+    transition: scale 0.5s, box-shadow 0.5s;
 }
 
 #social-icon {
@@ -203,6 +221,7 @@ h3 {
 
 .game-social-card:hover {
     scale: 1.05;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
 }
 
 .game-social-card:hover #social-icon {
