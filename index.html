@@ -5,10 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FETRP Page</title>
     <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/2ace4dd0e5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
-    
+    <!-- main page card -->
+    <div class = "page-card" id = "game-card">
+        <!-- game thumbnail -->
+        <div id = "thumbnail-container">
+            <img id = "game-thumbnail">
+        </div>
+
+        <!-- game title and metadata -->
+        <div id = "game-info">
+            <h1 id = "game-title">Fazbear Entertainment: The Roleplay</h1>
+            <h3 id = "game-author">By <span>Fazbear Entertainment</span></h3>
+            <h3 id = "game-age-rating">Maturity: Minimal</h3>
+        </div>
+
+        <!-- play button -->
+        <button id = "play-button">
+            <i class="fa-solid fa-play"></i>
+        </button>
+    </div>
+
+    <!-- 2nd half of page -->
+    <div class = "page-card" id = "game-description">
+        <!-- description stuff -->
+        <h3>Description</h3>
+        <h2>Introduction</h2>
+        <p>Welcome to Fazbear Entertainment: The Roleplay (FETRP)! This is a roleplay game based on Five Nights at Freddy's, created by Scott Cawthon. Please be aware that this game is not yet in its final version, so you may encounter bugs and glitches.</p>
+        <br>
+        <h2>Credits</h2>
+        <P>As a fan game of FNaF, all credits go to Scott Cawthon, the creator of the Five Nights at Freddy's franchise, and Steel Wool Studios. Additional credits can be seen in-game.</P>
+        <br>
+        <h2>#ThankYouScott</h2>
+
+        <hr class = "rounded">
+
+        <!-- maturity info card -->
+        <div class = "card-card" id = "game-maturity-info">
+            <span>Maturity: Minimal</span>&emsp;&ensp;Blood (Unrealistic/Light), Violence (Mild/Occasional), Fear (Occasional/Mild)
+        </div>
+
+        <!-- game stats card -->
+        <div class = "card-card" id = "game-stats">
+            <div class = "game-single-stat">
+                <h3>Active</h3>
+                <h2>256</h2>
+            </div>
+            <hr class = "rounded">
+            <div class = "game-single-stat">
+                <h3>Favorites</h3>
+                <h2>9,667</h2>
+            </div>
+            <hr class = "rounded">
+            <div class = "game-single-stat">
+                <h3>Visits</h3>
+                <h2>2.4M+</h2>
+            </div>
+            <hr class = "rounded">
+            <div class = "game-single-stat">
+                <h3>Created</h3>
+                <h2>2/24/2021</h2>
+            </div>
+            <hr class = "rounded">
+            <div class = "game-single-stat">
+                <h3>Updated</h3>
+                <h2>1 day ago</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class = "page-card" id = "game-socials">
+        <div class = "game-social-card">
+            <i class = "fa-brands fa-discord" id = "social-icon"></i>
+            <div id = "social-info">
+                <h2 id = "social-name">Discord</h2>
+                <p id = "social-description">Join the community</p>
+            </div>
+        </div>
+        <div class = "game-social-card">
+            <i class = "fa-brands fa-youtube" id = "social-icon"></i>
+            <div id = "social-info">
+                <h2 id = "social-name">Youtube</h2>
+                <p id = "social-description">Subscribe to the channel</p>
+            </div>
+        </div>
+        <div class = "game-social-card">
+            <i class = "fa-brands fa-x-twitter" id = "social-icon"></i>
+            <div id = "social-info">
+                <h2 id = "social-name">X</h2>
+                <p id = "social-description">Follow us for updates</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
