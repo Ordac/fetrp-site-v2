@@ -191,6 +191,9 @@ h3 {
 
     padding: 20px;
     display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
 }
 
 a {
@@ -200,7 +203,7 @@ a {
 
 .game-social-card {
     flex: auto;
-    margin: 10px;
+    flex-grow: 1;
 
     width: 100%;
     height: 100px;
